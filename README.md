@@ -13,6 +13,10 @@ Official implementation of **"Asymmetric Angular Margin Learning for Open-Set Fa
   <img src="figures/framework.jpg" width="800" alt="AAML framework overview">
 </p>
 
+**Figure:** Overview of the proposed Leave-One-Spoof-Out training and inference framework based on Asymmetric Angular Margin Loss. During training, face images (live: $y=1$, spoof: $y=0$) are fed into an EnhancedResNet encoder ($\phi_I$) followed by a feature extractor ($\phi_F$) to produce 128-dimensional embeddings $\mathbf{z}_I \in \mathbb{R}^{128}$. 
+    The Angular Margin Loss employs two learnable centers $\mathbf{C}_0$ (Spoof) and $\mathbf{C}_1$ (Live), computes cosine similarity, and applies an asymmetric margin ($M = 0.2$) exclusively to live-class logits before scaling ($s = 30$) and cross-entropy classification. 
+    During inference, the frozen shared encoder maps unseen test samples to the same embedding space, where classification is performed via cosine similarity to the learned centers. Performance is evaluated using AUC and HTER metrics.
+
 ## Highlights
 
 - **Asymmetric angular margin**: margin applied exclusively to the live class, unlike symmetric losses (e.g., ArcFace) that constrain all classes equally.
