@@ -13,8 +13,6 @@ Official implementation of **"Asymmetric Angular Margin Learning for Open-Set Fa
   <img src="figures/framework.jpg" width="800" alt="AAML framework overview">
 </p>
 
-t-SNE visualisation of feature embeddings across five leave-one-out protocols. The rows correspond to (a) Binary Cross-Entropy (BCE~\cite{goodfellow2016deep}), (b) Deep SVDD~\cite{ruff2018deep}, (c) ArcFace~\cite{deng2019arcface}, and (d) the proposed Asymmetric Angular Margin Loss (AAML). \textit{Blue} points represent Live samples, \textit{Red} points represent Known Spoofs (training), and \textit{Green} points represent Unseen Attacks (testing). While ArcFace~\cite{deng2019arcface} (Row 3) enforces symmetric compactness, the proposed AAML (Row 4) allows spoof samples to form a distributed manifold, resulting in a clearer separation of unseen attacks from the live cluster
-
 ## Highlights
 
 - **Asymmetric angular margin**: margin applied exclusively to the live class, unlike symmetric losses (e.g., ArcFace) that constrain all classes equally.
@@ -113,6 +111,9 @@ Example results reported in the paper (see manuscript for full tables):
 <p align="center">
   <img src="figures/tSNE_AAML.jpg" width="700" alt="t-SNE comparison across loss functions">
 </p>
+
+**Figure:** t-SNE visualisation of feature embeddings across five leave-one-out protocols. Rows correspond to (a) Binary Cross-Entropy (BCE), (b) Deep SVDD, (c) ArcFace, and (d) the proposed Asymmetric Angular Margin Loss (AAML). **Blue** points denote Live samples, **Red** points denote Known Spoofs used for training, and **Green** points denote Unseen Attacks used for testing. While ArcFace (Row 3) encourages symmetric compactness, the proposed AAML (Row 4) allows spoof samples to form a more distributed manifold, providing clearer separation between unseen attacks and the live cluster.
+
 
 ## Citation
 
