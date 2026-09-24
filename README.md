@@ -10,7 +10,7 @@ Official implementation of **"Asymmetric Angular Margin Learning for Open-Set Fa
 > heterogeneous nature of presentation attacks.
 
 <p align="center">
-  <img src="assets/framework_overview.png" width="800" alt="AAML framework overview">
+  <img src="figures/framework.jpg" width="800" alt="AAML framework overview">
 </p>
 
 ## Highlights
