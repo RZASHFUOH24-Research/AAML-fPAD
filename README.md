@@ -109,7 +109,7 @@ Example results reported in the paper (see manuscript for full tables):
 | SiW-Mv2 (coarse-grained) | Avg. HTER / AUC | **6.25% / 98.01%** |
 
 <p align="center">
-  <img src="assets/tsne_comparison.png" width="700" alt="t-SNE comparison across loss functions">
+  <img src="figures/tSNE_AAML.jpg" width="700" alt="t-SNE comparison across loss functions">
 </p>
 
 ## Citation
