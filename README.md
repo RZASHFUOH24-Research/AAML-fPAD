@@ -124,3 +124,11 @@ If you use this code, please cite our paper (citation details will be added once
   year    = {2026}
 }
 ```
+
+## License
+
+This project is released under the MIT License (see `LICENSE`).
+
+## Contact
+
+For questions, please contact Mohammadreza.Sheikhfathollahi@hud.ac.uk or open an issue in this repository.
