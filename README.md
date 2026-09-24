@@ -35,9 +35,7 @@ AAML-FacePAD/
 ├── visualize.py           # Feature scatter, t-SNE, confusion-matrix plots
 ├── evaluate.py            # APCER / BPCER / ACER evaluation
 ├── train.py               # Main training entry point
-├── requirements.txt
-├── assets/                # Figures used in this README
-└── results/               # Checkpoints & output plots are saved here (gitignored)
+└── requirements.txt
 ```
 
 ## Installation
