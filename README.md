@@ -41,7 +41,7 @@ AAML-FacePAD/
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/AAML-FacePAD.git
+git clone https://github.com/RZASHFUOH24-Research/AAML-FacePAD.git
 cd AAML-FacePAD
 python -m venv venv
 source venv/bin/activate      # on Windows: venv\Scripts\activate
