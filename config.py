@@ -9,7 +9,7 @@ import torch
 # PATHS
 # ----------------------------
 # Root folder that contains one "live" folder and several spoof-type folders
-ROOT_DIR = r"C:\Phd(Reza)\Angular-loss\Database\SiW-Mv2 coarse-grained"
+ROOT_DIR = r"..\path\to_folders"
 
 # Name of the folder that holds live (bona-fide) images
 LIVE_FOLDER_NAME = "Live"
@@ -27,7 +27,7 @@ SPOOF_FOLDERS = [
 LEFT_OUT_SPOOF = "Partial"
 
 # Where checkpoints and result plots are saved
-MODEL_SAVE_DIR = r"C:\Phd(Reza)\Angular-loss\SIW-Mv2 Ablation Results\Angular_256\Partial_Out"
+MODEL_SAVE_DIR = r"..\path\to_save_the_model"
 
 # ----------------------------
 # DATA SPLIT
