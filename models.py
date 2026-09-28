@@ -6,7 +6,7 @@ Maps input face images to a d-dimensional embedding (see Eq. 2 in the paper).
 import torch
 import torch.nn as nn
 from torchvision.models import resnet18, ResNet18_Weights
-
+# feature_dim = 128
 
 class EnhancedResNet18(nn.Module):
     """
