@@ -94,7 +94,7 @@ python train.py
 
 This will:
 1. Build the Leave-One-Spoof-Out train/test split.
-2. Train the `EnhancedResNet50` encoder jointly with the learnable angular class centres.
+2. Train the `EnhancedResNet` encoder jointly with the learnable angular class centres.
 3. Save a checkpoint per epoch to `MODEL_SAVE_DIR`.
 4. Generate feature-scatter and t-SNE plots for the final epoch.
 5. Run test-set evaluation and report **APCER / BPCER / ACER**, plus a confusion matrix.
