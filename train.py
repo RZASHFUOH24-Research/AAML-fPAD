@@ -12,7 +12,7 @@ import torch
 import config
 from dataset import build_leave_one_spoof_loaders
 from transforms_utils import get_train_transform, get_test_transform
-from models import EnhancedResNet50
+from models import EnhancedResNet
 from losses import AngularLoss
 from visualize import plot_features, plot_tsne
 from evaluate import evaluate
@@ -39,7 +39,7 @@ def main():
 
     # ---- Model / loss / optimiser ----
     device = config.DEVICE
-    model = EnhancedResNet50(feature_dim=config.FEATURE_DIM, pretrained=True).to(device)
+    model = EnhancedResNet(feature_dim=config.FEATURE_DIM, pretrained=True).to(device)
     criterion = AngularLoss(feature_dim=config.FEATURE_DIM).to(device)
     optimizer = torch.optim.Adam(
         list(model.parameters()) + list(criterion.parameters()), lr=config.LEARNING_RATE
