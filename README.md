@@ -4,7 +4,7 @@ Official implementation of **"Asymmetric Angular Margin Learning for Open-Set Fa
 
 Face presentation attack detection (PAD) is usually treated as a closed-set binary classification problem, limiting generalisation to unseen attacks. This repository implements **AAML**, an asymmetric angular-margin discriminative learning framework that enforces a margin, and hence tight hyperspherical compactness, only on the live class, while leaving the spoof class without an equivalent constraint so that spoof representations remain distributed. This better reflects the heterogeneous nature of presentation attacks.
 
-![AAML framework overview](assets/framework.jpg)
+![AAML framework overview](figures/framework.jpg)
 
 *Figure: Overview of the proposed Leave-One-Attack-Type-Out (LOAO) training and inference framework based on the Asymmetric Angular Margin Loss. During training, face images (live: y = 1, spoof: y = 0) are fed into an EnhancedResNet encoder (φ_I) followed by a projection head (φ_F) to produce 128-dimensional embeddings. The loss employs two learnable centres C0 (Spoof) and C1 (Live), computes the cosine similarity, subtracts an asymmetric margin (m = 0.2) from the live-class logit of live samples only, scales the logits (α = 30) and applies softmax cross-entropy. During inference, the shared encoder maps unseen test samples to the same embedding space, where classification is performed via cosine similarity to the learned centres. Performance is evaluated using AUC and HTER.*
 
@@ -106,7 +106,7 @@ Example results reported in the paper (see the manuscript for full tables):
 
 > The Oulu-NPU and cross-dataset protocols require their own data organisation and are not covered by the single-dataset loader provided here.
 
-![t-SNE comparison across loss functions](assets/tsne_comparison.jpg)
+![t-SNE comparison across loss functions](figures/tsne_comparison.jpg)
 
 *Figure: t-SNE visualisation of feature embeddings across five leave-one-out protocols. Rows correspond to (a) Binary Cross-Entropy (BCE), (b) Deep SVDD, (c) ArcFace, and (d) the proposed AAML. Blue: live samples, red: known spoofs used for training, green: unseen attacks used for testing. While ArcFace (row c) encourages symmetric compactness, AAML (row d) allows spoof samples to form a more distributed manifold, giving clearer separation between unseen attacks and the live cluster.*
 
