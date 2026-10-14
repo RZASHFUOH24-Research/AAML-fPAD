@@ -17,7 +17,7 @@ class EnhancedResNet(nn.Module):
     def __init__(self, feature_dim=128, pretrained=True):
         super().__init__()
         weights = ResNet18_Weights.DEFAULT if pretrained else None
-        backbone = resnet50(weights=weights)
+        backbone = resnet18(weights=weights)
         self.resnet = nn.Sequential(*list(backbone.children())[:-1])
 
         self.fc1 = nn.Linear(512, 256)
