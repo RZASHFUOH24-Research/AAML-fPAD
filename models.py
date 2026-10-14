@@ -1,5 +1,5 @@
 """
-Backbone model: EnhancedResNet50 feature extractor.
+Backbone model: EnhancedResNet feature extractor.
 Maps input face images to a d-dimensional embedding (see Eq. 2 in the paper).
 """
 
@@ -8,9 +8,9 @@ import torch.nn as nn
 from torchvision.models import resnet18, ResNet18_Weights
 # feature_dim = 128
 
-class EnhancedResNet18(nn.Module):
+class EnhancedResNet(nn.Module):
     """
-    ResNet-50 backbone (ImageNet-pretrained) + projection head.
+    ResNet-18 backbone (ImageNet-pretrained) + projection head.
     Projection head: 512 -> 256 -> feature_dim, with BatchNorm, ReLU, Dropout.
     """
 
