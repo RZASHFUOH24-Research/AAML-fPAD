@@ -23,7 +23,7 @@ class EnhancedResNet(nn.Module):
         self.fc1 = nn.Linear(512, 256)
         self.bn1 = nn.BatchNorm1d(256)
         self.dropout1 = nn.Dropout(0.5)
-        self.fc2 = nn.Linear(512, feature_dim)
+        self.fc2 = nn.Linear(256, feature_dim)
 
     def forward(self, x):
         features = self.resnet(x)
