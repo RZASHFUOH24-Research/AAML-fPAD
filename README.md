@@ -30,7 +30,7 @@ AAML-FacePAD/
 ├── config.py            # All paths & hyper-parameters (edit this, no CLI args needed)
 ├── dataset.py            # Leave-One-Spoof-Out dataset / dataloader construction
 ├── transforms_utils.py   # Train/test image transforms
-├── models.py              # EnhancedResNet50 backbone + projection head
+├── models.py              # EnhancedResNet backbone + projection head
 ├── losses.py              # Angular loss with learnable class centres
 ├── visualize.py           # Feature scatter, t-SNE, confusion-matrix plots
 ├── evaluate.py            # APCER / BPCER / ACER evaluation
