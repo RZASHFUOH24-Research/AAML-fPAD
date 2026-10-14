@@ -106,7 +106,7 @@ Example results reported in the paper (see the manuscript for full tables):
 
 > The Oulu-NPU and cross-dataset protocols require their own data organisation and are not covered by the single-dataset loader provided here.
 
-![t-SNE comparison across loss functions](figures/tsne_comparison.jpg)
+![t-SNE comparison across loss functions](figures/tSNE_AAML.jpg)
 
 *Figure: t-SNE visualisation of feature embeddings across five leave-one-out protocols. Rows correspond to (a) Binary Cross-Entropy (BCE), (b) Deep SVDD, (c) ArcFace, and (d) the proposed AAML. Blue: live samples, red: known spoofs used for training, green: unseen attacks used for testing. While ArcFace (row c) encourages symmetric compactness, AAML (row d) allows spoof samples to form a more distributed manifold, giving clearer separation between unseen attacks and the live cluster.*
 
